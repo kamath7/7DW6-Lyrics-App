@@ -5,25 +5,24 @@ import Index from "./components/layout/Index";
 import Lyrics from "./components/tracks/Lyrics";
 
 import "./App.css";
-import {Provider} from './context';
+import { Provider } from "./context";
 
 function App() {
   return (
     <Provider>
-    <Router>
-      <div className="App">
-        <React.Fragment>
-          <Navbar />
-          <div className="container">
-            <Switch>
-              <Route exact path="/" component={Index} />
-              <Route exact path="/lyrics/track/:id" component={Lyrics} />
-
-            </Switch>
-          </div>
-        </React.Fragment>
-      </div>
-    </Router>
+      <Router>
+        <div className="App">
+          <React.Fragment>
+            <Navbar />
+            <div className="container">
+              <Switch>
+                <Route exact path="/" component={Index} />
+                <Route exact path="/lyrics/track/:id" component={Lyrics} />
+              </Switch>
+            </div>
+          </React.Fragment>
+        </div>
+      </Router>
     </Provider>
   );
 }
