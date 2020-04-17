@@ -1,14 +1,16 @@
-import React from 'react'
+import React from "react";
 
-import Tracks from '../tracks/Tracks';
+import Tracks from "../tracks/Tracks";
+import Search from "../tracks/Search";
 
- const Index = () => {
-    return (
-        <div>
-            <React.Fragment>
-                <Tracks/>
-            </React.Fragment>
-        </div>
-    )
-}
+const Index = () => {
+  return (
+    <div>
+      <React.Fragment>
+        <Search />
+        <Tracks />
+      </React.Fragment>
+    </div>
+  );
+};
 export default Index;
